@@ -1,0 +1,13 @@
+<%- include("partials/header.ejs") %>
+
+<h1>To-Do Lists</h1>
+
+<form action="/daily" method="POST">
+    <input type="submit" value="Daily To-Do List">
+</form>
+
+<form action="/work" method="POST">
+    <input type="submit" value="Work To-Do List">
+</form>
+
+<%- include("partials/footer.ejs") %>

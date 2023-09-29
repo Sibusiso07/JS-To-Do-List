@@ -1,0 +1,73 @@
+/* Center content horizontally and vertically */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Background color */
+}
+
+/* Style the checkbox to scratch a line through the label when ticked */
+input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #333; /* Text color */
+}
+
+input[type="checkbox"] + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 2px;
+    background-color: #0077b6; /* Line color when checked */
+    display: none;
+}
+
+/* Style form elements */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff; /* Form background color */
+    padding: 20px;
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+
+input[type="text"], input[type="submit"] {
+    margin: 10px; /* Increase margin for spacing */
+    padding: 15px; /* Increase padding for bigger elements */
+    border: none;
+    border-radius: 5px; /* Rounded corners for input elements */
+    background-color: #f9f9f9; /* Input background color */
+    color: #333; /* Input text color */
+    width: 100%; /* Make the elements wider */
+}
+
+input[type="submit"] {
+    background-color: #0077b6; /* Submit button background color */
+    color: #ffffff; /* Submit button text color */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+input[type="submit"]:hover {
+    background-color: #005691; /* Hovered submit button background color */
+}
+
+ul {
+    list-style-type: none;
+    font-size: 25px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 15%;
+}
+
